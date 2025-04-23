@@ -1,7 +1,7 @@
 # minilab-reseau
-Configuration VLAN, DHCP, NAT, VoIP
+Configuration VLAN, DHCP, NAT, WIFI, VoIP
 ```markdown
-💻 MiniLab Réseaux – VLAN, DHCP, NAT & VoIP
+💻 MiniLab Réseaux – VLAN, DHCP, WIFI, NAT & VoIP  
 
 👤 Auteur
 
@@ -19,6 +19,7 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 - Le routage inter-VLAN.
 - La mise en place du NAT pour l'accès à Internet.
 - L'intégration de la VoIP avec des téléphones IP.
+- Connexion Wi-Fi : Les portables se connectent via l’SSID configuré
 
 ---
 
@@ -81,10 +82,11 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 - Ping entre les PC : Tous les PC, qu'ils soient fixes ou portables, peuvent se pinguer mutuellement, confirmant le bon fonctionnement du routage inter-VLAN.
 - Ping entre les téléphones IP : Les téléphones IP reçoivent automatiquement une adresse IP via DHCP et peuvent se pinguer entre eux.
 - Accès Internet : Tous les équipements ont accès à Internet via le NAT configuré sur le routeur principal.
+- Connexion Wi-Fi : Les portables se connectent via l’SSID configuré
+
 
 ---
 
-📸 Captures d'écran
 
 📝 Conclusion
 
