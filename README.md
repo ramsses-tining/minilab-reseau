@@ -1,16 +1,16 @@
 # minilab-reseau
 Configuration VLAN, DHCP, NAT, WIFI, VoIP
 ```markdown
-💻 MiniLab Réseaux – VLAN, DHCP, WIFI, NAT & VoIP  
+ MiniLab Réseaux – VLAN, DHCP, WIFI, NAT & VoIP  
 
-👤 Auteur
+ Auteur
 
 - Nom : Tining
 - Prénom : Ramsses
 
 ---
 
-🎯 Objectif du projet
+ Objectif du projet
 
 Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec Cisco Packet Tracer, intégrant :
 
@@ -23,7 +23,7 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 
 ---
 
-🧰 Équipements utilisés
+ Équipements utilisés
 
 - Routeur principal : Cisco 1941
 - Routeur R-cloud : Simule l'accès Internet
@@ -36,7 +36,7 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 
 ---
 
-🗺 Plan d'adressage et VLANs
+ Plan d'adressage et VLANs
 
 | VLAN | Usage           | Adresse réseau     | Plage DHCP                   |
 |------|-----------------|--------------------|------------------------------|
@@ -47,9 +47,9 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 
 ---
 
-🔧 Configuration des équipements
+ Configuration des équipements
 
-🛠 Routeur principal (Cisco 1941)
+ Routeur principal (Cisco 1941)
 
 - Création des sous-interfaces pour chaque VLAN :
   - GigabitEthernet0/0.1 pour VLAN 1
@@ -61,7 +61,7 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 - Configuration du DHCP pour chaque VLAN.
 - Mise en place du NAT pour permettre l'accès à Internet via le routeur R-cloud.
 
-🛠 Switchs PT
+ Switchs PT
 
 - Création des VLANs : 1, 10, 20, 30.
 - Affectation des ports :
@@ -71,14 +71,14 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
   - Port 8 : VLAN 30 (Administration)
   - Ports 1 et 9 : Trunk pour liaison entre switches et vers le routeur.
 
-🛠 Routeur R-cloud
+ Routeur R-cloud
 
 - Configuration d'une interface simulant l'accès Internet.
 - Connexion via le Bridge-PT pour permettre la communication avec le routeur principal.
 
 ---
 
-🧪 Tests de connectivité
+ Tests de connectivité
 - Ping entre les PC : Tous les PC, qu'ils soient fixes ou portables, peuvent se pinguer mutuellement, confirmant le bon fonctionnement du routage inter-VLAN.
 - Ping entre les téléphones IP : Les téléphones IP reçoivent automatiquement une adresse IP via DHCP et peuvent se pinguer entre eux.
 - Accès Internet : Tous les équipements ont accès à Internet via le NAT configuré sur le routeur principal.
@@ -88,6 +88,6 @@ Ce projet vise à concevoir et configurer un réseau d'entreprise simulé avec C
 ---
 
 
-📝 Conclusion
+ Conclusion
 
 Ce projet m'a permis de mettre en pratique les concepts fondamentaux du réseautage, notamment la segmentation du réseau avec les VLANs, l'attribution dynamique des adresses IP, le routage inter-VLAN, la configuration du NAT pour l'accès Internet et l'intégration de la VoIP. Les tests de connectivité ont confirmé la réussite de la configuration.
